@@ -79,11 +79,11 @@
   border-bottom-left-radius: 1rem;
   position: absolute;
   visibility: hidden;
-  bottom: -13rem;
   display: flex;
   flex-direction: column;
   z-index: 57;
   opacity: 0;
+  right: 0;
   transition: all 0.1s ease-in-out;
 }
 .info_list li {
@@ -93,9 +93,8 @@
   font-size: 1.1rem;
   line-height: normal;
 }
-.info_list:hover {
+.info_link:hover + .info_list {
   visibility: visible;
-  bottom: -10.9rem;
   opacity: 1;
 }
 .container_bottom {
@@ -138,13 +137,6 @@
   }
 }
 @media screen and (max-width: 768px) {
-  .info_link,
-  .info_list:hover {
-    bottom: -10.65rem;
-  }
-  .info_list:hover {
-    bottom: -10.65rem;
-  }
   .icons_menu {
     gap: 2rem;
   }

@@ -1,0 +1,14 @@
+.button {
+  text-align: center;
+  border: none;
+  letter-spacing: var(--ls-button);
+  font-family: var(--font-f-primary);
+
+  -moz-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+}
+.button:hover {
+  cursor: pointer;
+}

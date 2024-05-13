@@ -1,55 +1,60 @@
 import React from "react";
 import "./nav.css";
 import { Link, NavLink } from "react-router-dom";
-import logo from "../../assets/images/logo-nav.png";
+import logo from "../../assets/images/logo.png";
+import Button from "../button/Button";
 const Nav = () => {
   return (
     <nav className="nav">
       <div className="container_top">
-        <button className="link info_link" type="button">
-          Info
-        </button>
-        <ul className="info_list">
-          <li>
-            <Link className="link" to="/">
-              Help Center
-            </Link>
-          </li>
-          <li>
-            <Link className="link" to="/">
-              Contact Us
-            </Link>
-          </li>
-          <li>
-            <Link className="link" to="/">
-              Shipping Info
-            </Link>
-          </li>
-          <li>
-            <Link className="link" to="/">
-              Track My Order
-            </Link>
-          </li>
-          <li>
-            <Link className="link" to="/">
-              Return & Exchanges
-            </Link>
-          </li>
-          <li>
-            <Link className="link" to="/">
-              About Us
-            </Link>
-          </li>
-          <li>
-            <Link className="link" to="/">
-              Carreer
-            </Link>
-          </li>
-        </ul>
-
-        <Link to="/account/login" className="link login_link">
-          Login
-        </Link>
+        <div className="left-item">
+          <p>Free Domestic Shipping over $150 and 30 Day Returns</p>
+        </div>
+        <div className="right-item">
+          <Button to="/" className="link info_link" type="button">
+            Info
+          </Button>
+          <ul className="info_list">
+            <li>
+              <Link className="link" to="/">
+                Help Center
+              </Link>
+            </li>
+            <li>
+              <Link className="link" to="/">
+                Contact Us
+              </Link>
+            </li>
+            <li>
+              <Link className="link" to="/">
+                Shipping Info
+              </Link>
+            </li>
+            <li>
+              <Link className="link" to="/">
+                Track My Order
+              </Link>
+            </li>
+            <li>
+              <Link className="link" to="/">
+                Return & Exchanges
+              </Link>
+            </li>
+            <li>
+              <Link className="link" to="/">
+                About Us
+              </Link>
+            </li>
+            <li>
+              <Link className="link" to="/">
+                Carreer
+              </Link>
+            </li>
+          </ul>
+          <Button to="/account/login" className="link login_link">
+            Login
+          </Button>
+        </div>
       </div>
       <div className="container_bottom">
         <Link to="/">

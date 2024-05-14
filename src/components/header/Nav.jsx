@@ -67,7 +67,7 @@ const Nav = () => {
           <img className="logo" src={logo} alt="Logo Nav" />
         </Link>
         <div className="menu">
-          <Link className="link" to="/">
+          <Link className="link dress" to="/">
             Dress
           </Link>
           <Link className="link" to="/">

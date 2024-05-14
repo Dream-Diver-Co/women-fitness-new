@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import dress from "../../assets/images/4U8A0766.webp";
 import "./dress.css";
 import Item from "./Item";
@@ -77,21 +77,23 @@ const Dress = () => {
     },
   ];
   return (
-    <div className="dress_menu">
-      <div className="dress_menu_category d-flex">
-        <Item category="Featured" items={Featured} />
-        <Item category="Tops" items={Tops} />
-        <Item category="Bottoms" items={Bottoms} />
-        <Item category="Collections" items={Collections} />
+    <div className="hover_visibility">
+      <div className="dress_menu">
+        <div className="dress_menu_category d-flex">
+          <Item category="Featured" items={Featured} />
+          <Item category="Tops" items={Tops} />
+          <Item category="Bottoms" items={Bottoms} />
+          <Item category="Collections" items={Collections} />
+        </div>
+        <ul className="dress_menu_product_image">
+          <Link to="/">
+            <img src={dress} alt="" />
+          </Link>
+          <Link to="/">
+            <img src={dress} alt="" />
+          </Link>
+        </ul>
       </div>
-      <ul className="dress_menu_product_image d-flex">
-        <Link to="/">
-          <img src={dress} alt="" />
-        </Link>
-        <Link to="/">
-          <img src={dress} alt="" />
-        </Link>
-      </ul>
     </div>
   );
 };

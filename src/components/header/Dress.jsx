@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import dress from "../../assets/images/4U8A0766.webp";
 import "./dress.css";
 import Item from "./Item";

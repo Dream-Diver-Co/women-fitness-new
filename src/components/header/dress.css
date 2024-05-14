@@ -1,0 +1,10 @@
+.dress_menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.dress_menu_product_image a img {
+  width: 100%;
+  height: 10rem;
+}
+.dress_menu_product_image {
+}

@@ -49,7 +49,7 @@
   --border-c-var: hsla(0, 0%, 5%, 0.2);
   /* --border-c-var: #3b3b3b; */
 
-  --border-modal: 1px solid --border-c-var;
+  --border-modal: 1px solid hsla(0, 0%, 5%, 0.2);
 
   --ls-primary: 0.05rem;
   --ls-secondary: -0.05rem;

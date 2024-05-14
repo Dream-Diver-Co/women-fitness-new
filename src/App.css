@@ -29,7 +29,7 @@ p {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -56,4 +56,8 @@ footer {
 
 .swiper-pagination-bullet-active {
   background-color: #fff !important;
+}
+
+.d-flex {
+  display: flex;
 }

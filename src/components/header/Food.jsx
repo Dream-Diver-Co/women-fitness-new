@@ -79,10 +79,10 @@ const Food = () => {
     <div className="hover_visibility">
       <div className="dress_menu">
         <div className="dress_menu_category d-flex">
-          <Item category="Featured" items={Healthy} />
-          <Item category="Tops" items={Dairy} />
-          <Item category="Bottoms" items={Nutrition} />
-          <Item category="Collections" items={Sweets} />
+          <Item category="Healthy" items={Healthy} />
+          <Item category="Dairy" items={Dairy} />
+          <Item category="Nutrition" items={Nutrition} />
+          <Item category="Sweets" items={Sweets} />
         </div>
         <ul className="dress_menu_product_image">
           <Link to="/">

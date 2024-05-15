@@ -1,3 +1,6 @@
+.hover_visibility {
+  transition: all 0.5s ease-in-out;
+}
 .dress_menu {
   display: grid;
   grid-template-columns: 1fr 1fr;

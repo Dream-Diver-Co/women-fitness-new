@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./nav.css";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
@@ -7,6 +7,7 @@ import { CgSearch } from "react-icons/cg";
 import { RiMenuLine } from "react-icons/ri";
 import { FaShoppingCart } from "react-icons/fa";
 import Dress from "./Dress";
+import Food from "./Food";
 const Nav = () => {
   const InfoList = [
     {
@@ -38,8 +39,9 @@ const Nav = () => {
       title: "Carreer",
     },
   ];
+  const [hovering, setHovering] = useState(null);
   return (
-    <nav className="nav">
+    <nav className="nav" onMouseLeave={() => setHovering(null)}>
       <div className="container_top">
         <div className="left-item">
           <p>Free Domestic Shipping over $150 and 30 Day Returns</p>
@@ -67,10 +69,22 @@ const Nav = () => {
           <img className="logo" src={logo} alt="Logo Nav" />
         </Link>
         <div className="menu">
-          <Link className="link dress" to="/">
+          <Link
+            className="link dress"
+            onMouseEnter={(event) => {
+              setHovering(0);
+            }}
+            to="/"
+          >
             Dress
           </Link>
-          <Link className="link" to="/">
+          <Link
+            className="link"
+            onMouseEnter={(event) => {
+              setHovering(1);
+            }}
+            to="/"
+          >
             Foods
           </Link>
         </div>
@@ -86,7 +100,7 @@ const Nav = () => {
           </li>
         </ul>
       </div>
-      <Dress />
+      {hovering === 0 ? <Dress /> : hovering === 1 ? <Food /> : null}
     </nav>
   );
 };

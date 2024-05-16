@@ -25,6 +25,7 @@
   --c-link-primary: #3d3d3d;
   --c-link-hover: #000;
   --c-discount: rgba(243, 121, 120, 1);
+  --color-black-20: hsl(0deg 0% 5% / 20%);
 
   --back-c-primary: #fff;
   --back-c-grey: #3d3d3d;

@@ -61,3 +61,22 @@ footer {
 .d-flex {
   display: flex;
 }
+
+.btn {
+  backdrop-filter: saturate(180%) blur(1rem);
+  color: var(--c-secondary);
+  border-radius: 6rem;
+  box-shadow: 0 0 2rem var(--color-black-20);
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 1.5rem;
+  padding: 8px 20px;
+  transition: all 0.2s ease-out;
+  text-transform: uppercase;
+  font-family: GT, Helvetica, serif;
+  font-weight: 600;
+}
+.btn:hover {
+  background-color: var(--c-secondary) !important;
+  transform: translateY(-0.5rem) !important;
+  color: var(--c-primary) !important;
+}

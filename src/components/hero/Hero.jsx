@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import LogoHero from "../../assets/images/logo.png";
 import video from "../../assets/video/videohero.mp4";
 import "./hero.css";
 const Hero = () => {
@@ -22,7 +21,6 @@ const Hero = () => {
           </div>
 
           <div className="logo_wrapper">
-            {/* <img src={LogoHero} alt="Hero Logo" className="logo" /> */}
             <Link className="btn" to="/">
               Shop Dress
             </Link>

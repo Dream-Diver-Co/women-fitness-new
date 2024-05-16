@@ -16,12 +16,12 @@
   -o-transition: transform ease 0.2s;
   -ms-transition: transform ease 0.2s;
   transition: transform ease 0.2s;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }
 .container .video_container:hover {
   transform: scale(1.01);
 }
-.container .video_container .video_fill {
-}
+
 .video {
   height: 100%;
   width: 100%;
@@ -42,9 +42,7 @@
   display: flex;
   justify-content: center;
 }
-/* .content .logo_wrapper .logo {
-  width: 25%;
-} */
+
 .media_container {
   overflow: hidden;
   box-shadow: 1px solid hsla(0, 0%, 5%, 0.2);
@@ -92,10 +90,11 @@
   width: 20rem;
 }
 .content .hero_title span {
-  background-color: rgba(197, 197, 197, 0.918);
+  background-color: rgba(40, 34, 34, 0.918);
   padding: 2px 15px;
   text-align: center;
   border-radius: 0.3rem;
+  color: var(--back-c-button-checkout);
 }
 .hero_title h3,
 h6 {

@@ -1,0 +1,23 @@
+.category-header {
+  justify-content: space-between;
+  max-width: 120rem;
+  width: 90%;
+  align-items: center;
+  max-width: 1400px;
+  margin: auto;
+}
+.category-header .category-link {
+  background-color: var(--c-primary);
+  color: var(--c-secondary);
+  font-size: 1rem;
+  /* padding-left: 13px;
+  padding-right: 13px;
+  padding-bottom: 5px;
+  padding-top: 5px;  */
+}
+.category-header-left p {
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
